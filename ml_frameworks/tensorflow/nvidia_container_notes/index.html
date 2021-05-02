@@ -9,19 +9,19 @@
       
       
       
-      <link rel="icon" href="/images/alcf_favicon.ico">
+      <link rel="icon" href="../../../images/alcf_favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
     
     
       
-        <title>Theta GPU Documentation</title>
+        <title>Running with Singularity - Theta GPU Documentation</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.e35208c4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e35208c4.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
         
           
           
@@ -55,12 +55,17 @@
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="amber">
   
     
-    <script>function __prefix(e){return new URL("/",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#nvidia-container-notes" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -69,9 +74,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Theta GPU Documentation" class="md-header__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
+    <a href="../../.." title="Theta GPU Documentation" class="md-header__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
       
-  <img src="/images/Argonne_wireframe_white_transparent.png" alt="logo">
+  <img src="../../../images/Argonne_wireframe_white_transparent.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -87,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Running with Singularity
             
           </span>
         </div>
@@ -161,9 +166,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Theta GPU Documentation" class="md-nav__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
+    <a href="../../.." title="Theta GPU Documentation" class="md-nav__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
       
-  <img src="/images/Argonne_wireframe_white_transparent.png" alt="logo">
+  <img src="../../../images/Argonne_wireframe_white_transparent.png" alt="logo">
 
     </a>
     Theta GPU Documentation
@@ -192,7 +197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -207,7 +212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/system_overview_and_node_information/" class="md-nav__link">
+      <a href="../../../system_overview_and_node_information/" class="md-nav__link">
         System Overview and Node Information
       </a>
     </li>
@@ -222,7 +227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gpu_node_queue_and_policy/" class="md-nav__link">
+      <a href="../../../gpu_node_queue_and_policy/" class="md-nav__link">
         GPU Node Queues and Policy
       </a>
     </li>
@@ -237,7 +242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/GPU%20Monitoring/" class="md-nav__link">
+      <a href="../../../GPU%20Monitoring/" class="md-nav__link">
         GPU Monitoring
       </a>
     </li>
@@ -252,7 +257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/python_venvs/" class="md-nav__link">
+      <a href="../../../python_venvs/" class="md-nav__link">
         Python Virtual Environments
       </a>
     </li>
@@ -267,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/mpi/" class="md-nav__link">
+      <a href="../../../mpi/" class="md-nav__link">
         MPI
       </a>
     </li>
@@ -282,7 +287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Singularity%20Containers/" class="md-nav__link">
+      <a href="../../../Singularity%20Containers/" class="md-nav__link">
         Singularity Containers
       </a>
     </li>
@@ -297,7 +302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/building_python_packages/" class="md-nav__link">
+      <a href="../../../building_python_packages/" class="md-nav__link">
         Building Python Packages in a Container
       </a>
     </li>
@@ -312,7 +317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/jupyter/" class="md-nav__link">
+      <a href="../../../jupyter/" class="md-nav__link">
         Jupyter
       </a>
     </li>
@@ -325,12 +330,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" checked>
       
       <label class="md-nav__link" for="__nav_10">
         DL Frameworks
@@ -346,12 +353,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1" type="checkbox" id="__nav_10_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1" type="checkbox" id="__nav_10_1" checked>
       
       <label class="md-nav__link" for="__nav_10_1">
         TensorFlow
@@ -367,11 +376,65 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/ml_frameworks/tensorflow/nvidia_container_notes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Running with Singularity
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Running with Singularity
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-the-container" class="md-nav__link">
+    Getting the container
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-on-thetagpu" class="md-nav__link">
+    Running on ThetaGPU
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-tensorflow-2-with-horovod-on-thetagpu" class="md-nav__link">
+    Running Tensorflow-2 with Horovod on ThetaGPU
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -381,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/tensorflow/running_with_conda/" class="md-nav__link">
+      <a href="../running_with_conda/" class="md-nav__link">
         Running with Conda
       </a>
     </li>
@@ -393,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/tensorflow/tensorboard_instructions/" class="md-nav__link">
+      <a href="../tensorboard_instructions/" class="md-nav__link">
         Tensorboard
       </a>
     </li>
@@ -432,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/pytorch/running_with_conda/" class="md-nav__link">
+      <a href="../../pytorch/running_with_conda/" class="md-nav__link">
         Running with Conda
       </a>
     </li>
@@ -450,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/data_parallel_training/" class="md-nav__link">
+      <a href="../../../data_parallel_training/" class="md-nav__link">
         Data Parallel Training
       </a>
     </li>
@@ -492,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Building_Compiling/" class="md-nav__link">
+      <a href="../../../Building_Compiling/" class="md-nav__link">
         Python/C++ code interoperability
       </a>
     </li>
@@ -504,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Building_Compiling/compiling_and_linking/" class="md-nav__link">
+      <a href="../../../Building_Compiling/compiling_and_linking/" class="md-nav__link">
         Compiling and Linking
       </a>
     </li>
@@ -525,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/balsam/" class="md-nav__link">
+      <a href="../../../balsam/" class="md-nav__link">
         Balsam
       </a>
     </li>
@@ -540,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deephyper/" class="md-nav__link">
+      <a href="../../../deephyper/" class="md-nav__link">
         DeepHyper
       </a>
     </li>
@@ -554,11 +617,107 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-the-container" class="md-nav__link">
+    Getting the container
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-on-thetagpu" class="md-nav__link">
+    Running on ThetaGPU
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-tensorflow-2-with-horovod-on-thetagpu" class="md-nav__link">
+    Running Tensorflow-2 with Horovod on ThetaGPU
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+                  <a href="https://github.com/argonne-lcf/ThetaGPU-Docs/edit/master/docs/ml_frameworks/tensorflow/nvidia_container_notes.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="nvidia-container-notes">NVidia Container Notes</h1>
+<h2 id="getting-the-container">Getting the container</h2>
+<p>To get NVidia docker containers which have the latest CUDA and Tensorflow installed, go to <a href="https://ngc.nvidia.com">NVidia NGC</a>, create an account, search for <code>Tensorflow</code>. Notice there are containers tagged with <code>tf1</code> and <code>tf2</code>. The page tells you how to select the right one.</p>
+<p>You can convert the command at the top, for instance:
+<div class="highlight"><pre><span></span><code>docker pull nvcr.io/nvidia/tensorflow:20.08-tf2-py3
+</code></pre></div>
+to a singularity command by doing this:</p>
+<div class="highlight"><pre><span></span><code>singularity build tensorflow-20.08-tf2-py3.simg docker://nvcr.io/nvidia/tensorflow:20.08-tf2-py3
+</code></pre></div>
+<p>You'll need to run this command on a Theta login node which has network access (<code>thetaloginX</code>).  The containers from August, 2020, are also all available converted to singularity here: <code>/lus/theta-fs0/projects/datascience/thetaGPU/containers/</code></p>
+<h2 id="running-on-thetagpu">Running on ThetaGPU</h2>
+<p>After logging into ThetaGPU with <code>ssh thetagpusn1</code>, one can submit job using the container one a single node by doing:
+<code>qsub -n 1 -t 10 -A &lt;project-name&gt; submit.sh</code>
+where <code>submit.sh</code> contians the following bash scripting:
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="nv">CONTAINER</span><span class="o">=</span><span class="nv">$HOME</span>/tensorflow-20.08-tf2-py3.simg
+
+singularity <span class="nb">exec</span> --nv <span class="nv">$CONTAINER</span> python /usr/local/lib/python3.6/dist-packages/tensorflow/python/debug/examples/debug_mnist.py
+</code></pre></div>
+make sure to make the script executable with <code>chmod a+x submit.sh</code>.</p>
+<p>The log file <code>&lt;cobalt-jobid&gt;.output</code> should contain some text like this:
+<div class="highlight"><pre><span></span><code>Accuracy at step <span class="m">0</span>: <span class="m">0</span>.2159
+Accuracy at step <span class="m">1</span>: <span class="m">0</span>.098
+Accuracy at step <span class="m">2</span>: <span class="m">0</span>.098
+Accuracy at step <span class="m">3</span>: <span class="m">0</span>.098
+Accuracy at step <span class="m">4</span>: <span class="m">0</span>.098
+Accuracy at step <span class="m">5</span>: <span class="m">0</span>.098
+Accuracy at step <span class="m">6</span>: <span class="m">0</span>.098
+Accuracy at step <span class="m">7</span>: <span class="m">0</span>.098
+Accuracy at step <span class="m">8</span>: <span class="m">0</span>.098
+Accuracy at step <span class="m">9</span>: <span class="m">0</span>.098
+</code></pre></div></p>
+<p>The numbers may be different.</p>
+<h2 id="running-tensorflow-2-with-horovod-on-thetagpu">Running Tensorflow-2 with Horovod on ThetaGPU</h2>
+<p>To run on ThetaGPU with MPI you can do the follow test:</p>
+<div class="highlight"><pre><span></span><code>git clone git@github.com:jtchilders/tensorflow_skeleton.git
+<span class="nb">cd</span> tensorflow_skeleton
+qsub -n <span class="m">2</span> -t <span class="m">20</span> -A &lt;project-name&gt; submit_scripts/thetagpu_mnist.sh
+</code></pre></div>
+<p>You can inspect the submit script for details on how the job is constructed.</p>
+                
+              
+              
+                
+
 
               
             </article>
@@ -569,6 +728,39 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../../../jupyter/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Jupyter
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../running_with_conda/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Running with Conda
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -602,10 +794,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "/", "features": ["tabs", "instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "/assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["tabs", "instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.4ea5477f.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
     
   </body>

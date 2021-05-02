@@ -9,19 +9,19 @@
       
       
       
-      <link rel="icon" href="/images/alcf_favicon.ico">
+      <link rel="icon" href="../images/alcf_favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
     
     
       
-        <title>Theta GPU Documentation</title>
+        <title>Python Virtual Environments - Theta GPU Documentation</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.e35208c4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.e35208c4.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
         
           
           
@@ -55,12 +55,17 @@
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="amber">
   
     
-    <script>function __prefix(e){return new URL("/",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#python-virtual-environments" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -69,9 +74,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Theta GPU Documentation" class="md-header__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
+    <a href=".." title="Theta GPU Documentation" class="md-header__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
       
-  <img src="/images/Argonne_wireframe_white_transparent.png" alt="logo">
+  <img src="../images/Argonne_wireframe_white_transparent.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -87,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Python Virtual Environments
             
           </span>
         </div>
@@ -161,9 +166,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Theta GPU Documentation" class="md-nav__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
+    <a href=".." title="Theta GPU Documentation" class="md-nav__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
       
-  <img src="/images/Argonne_wireframe_white_transparent.png" alt="logo">
+  <img src="../images/Argonne_wireframe_white_transparent.png" alt="logo">
 
     </a>
     Theta GPU Documentation
@@ -192,7 +197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         Home
       </a>
     </li>
@@ -207,7 +212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/system_overview_and_node_information/" class="md-nav__link">
+      <a href="../system_overview_and_node_information/" class="md-nav__link">
         System Overview and Node Information
       </a>
     </li>
@@ -222,7 +227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gpu_node_queue_and_policy/" class="md-nav__link">
+      <a href="../gpu_node_queue_and_policy/" class="md-nav__link">
         GPU Node Queues and Policy
       </a>
     </li>
@@ -237,7 +242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/GPU%20Monitoring/" class="md-nav__link">
+      <a href="../GPU%20Monitoring/" class="md-nav__link">
         GPU Monitoring
       </a>
     </li>
@@ -250,11 +255,72 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/python_venvs/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Python Virtual Environments
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Python Virtual Environments
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#base-python38-installation" class="md-nav__link">
+    Base Python3.8 installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extending-with-virtualenv" class="md-nav__link">
+    Extending with virtualenv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extending-with-conda" class="md-nav__link">
+    Extending with conda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-virtualenvs-with-containers" class="md-nav__link">
+    Combining virtualenvs with containers
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -267,7 +333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/mpi/" class="md-nav__link">
+      <a href="../mpi/" class="md-nav__link">
         MPI
       </a>
     </li>
@@ -282,7 +348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Singularity%20Containers/" class="md-nav__link">
+      <a href="../Singularity%20Containers/" class="md-nav__link">
         Singularity Containers
       </a>
     </li>
@@ -297,7 +363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/building_python_packages/" class="md-nav__link">
+      <a href="../building_python_packages/" class="md-nav__link">
         Building Python Packages in a Container
       </a>
     </li>
@@ -312,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/jupyter/" class="md-nav__link">
+      <a href="../jupyter/" class="md-nav__link">
         Jupyter
       </a>
     </li>
@@ -369,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/tensorflow/nvidia_container_notes/" class="md-nav__link">
+      <a href="../ml_frameworks/tensorflow/nvidia_container_notes/" class="md-nav__link">
         Running with Singularity
       </a>
     </li>
@@ -381,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/tensorflow/running_with_conda/" class="md-nav__link">
+      <a href="../ml_frameworks/tensorflow/running_with_conda/" class="md-nav__link">
         Running with Conda
       </a>
     </li>
@@ -393,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/tensorflow/tensorboard_instructions/" class="md-nav__link">
+      <a href="../ml_frameworks/tensorflow/tensorboard_instructions/" class="md-nav__link">
         Tensorboard
       </a>
     </li>
@@ -432,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/pytorch/running_with_conda/" class="md-nav__link">
+      <a href="../ml_frameworks/pytorch/running_with_conda/" class="md-nav__link">
         Running with Conda
       </a>
     </li>
@@ -450,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/data_parallel_training/" class="md-nav__link">
+      <a href="../data_parallel_training/" class="md-nav__link">
         Data Parallel Training
       </a>
     </li>
@@ -492,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Building_Compiling/" class="md-nav__link">
+      <a href="../Building_Compiling/" class="md-nav__link">
         Python/C++ code interoperability
       </a>
     </li>
@@ -504,7 +570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Building_Compiling/compiling_and_linking/" class="md-nav__link">
+      <a href="../Building_Compiling/compiling_and_linking/" class="md-nav__link">
         Compiling and Linking
       </a>
     </li>
@@ -525,7 +591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/balsam/" class="md-nav__link">
+      <a href="../balsam/" class="md-nav__link">
         Balsam
       </a>
     </li>
@@ -540,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deephyper/" class="md-nav__link">
+      <a href="../deephyper/" class="md-nav__link">
         DeepHyper
       </a>
     </li>
@@ -554,11 +620,92 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#base-python38-installation" class="md-nav__link">
+    Base Python3.8 installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extending-with-virtualenv" class="md-nav__link">
+    Extending with virtualenv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extending-with-conda" class="md-nav__link">
+    Extending with conda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-virtualenvs-with-containers" class="md-nav__link">
+    Combining virtualenvs with containers
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+                  <a href="https://github.com/argonne-lcf/ThetaGPU-Docs/edit/master/docs/python_venvs.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="python-virtual-environments">Python virtual environments</h1>
+<h2 id="base-python38-installation">Base Python3.8 installation</h2>
+<p>A Miniconda base environment using Python 3.8 and containing optimized builds of Tensorflow and Horovod is available by sourcing the setup script:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span> /lus/theta-fs0/software/thetagpu/conda/tf_master/latest/mconda3/setup.sh
+</code></pre></div>
+<h2 id="extending-with-virtualenv">Extending with virtualenv</h2>
+<p>To extend this base environment with virtualenv and inherit the base enviroment packages, one can use the <code>--system-site-packages</code> flag:</p>
+<div class="highlight"><pre><span></span><code>python -m venv --system-site-packages my_env
+<span class="nb">source</span> my_env/bin/activate
+<span class="c1"># Install additional packages here...</span>
+</code></pre></div>
+<h2 id="extending-with-conda">Extending with conda</h2>
+<p>If you prefer to use <code>conda</code> to manage your environment, refer to the <a href="../ml_frameworks/tensorflow/running_with_conda/">conda
+environments page</a> for instructions on
+cloning the base environment.</p>
+<h2 id="combining-virtualenvs-with-containers">Combining virtualenvs with containers</h2>
+<p>If you wish to extend the Python environment built into a Singularity container, refer
+to the notes on <a href="../building_python_packages/">building on top of a container</a>.</p>
+                
+              
+              
+                
+
 
               
             </article>
@@ -569,6 +716,39 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../GPU%20Monitoring/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              GPU Monitoring
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../mpi/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              MPI
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -602,10 +782,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "/", "features": ["tabs", "instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "/assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["tabs", "instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.4ea5477f.min.js"></script>
+      <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
     
   </body>

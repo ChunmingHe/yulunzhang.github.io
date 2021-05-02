@@ -9,19 +9,19 @@
       
       
       
-      <link rel="icon" href="/images/alcf_favicon.ico">
+      <link rel="icon" href="../../../images/alcf_favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
     
     
       
-        <title>Theta GPU Documentation</title>
+        <title>Running with Conda - Theta GPU Documentation</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.e35208c4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e35208c4.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
         
           
           
@@ -55,12 +55,17 @@
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="amber">
   
     
-    <script>function __prefix(e){return new URL("/",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#running-tensorflow-with-conda" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -69,9 +74,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Theta GPU Documentation" class="md-header__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
+    <a href="../../.." title="Theta GPU Documentation" class="md-header__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
       
-  <img src="/images/Argonne_wireframe_white_transparent.png" alt="logo">
+  <img src="../../../images/Argonne_wireframe_white_transparent.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -87,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Running with Conda
             
           </span>
         </div>
@@ -161,9 +166,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Theta GPU Documentation" class="md-nav__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
+    <a href="../../.." title="Theta GPU Documentation" class="md-nav__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
       
-  <img src="/images/Argonne_wireframe_white_transparent.png" alt="logo">
+  <img src="../../../images/Argonne_wireframe_white_transparent.png" alt="logo">
 
     </a>
     Theta GPU Documentation
@@ -192,7 +197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -207,7 +212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/system_overview_and_node_information/" class="md-nav__link">
+      <a href="../../../system_overview_and_node_information/" class="md-nav__link">
         System Overview and Node Information
       </a>
     </li>
@@ -222,7 +227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gpu_node_queue_and_policy/" class="md-nav__link">
+      <a href="../../../gpu_node_queue_and_policy/" class="md-nav__link">
         GPU Node Queues and Policy
       </a>
     </li>
@@ -237,7 +242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/GPU%20Monitoring/" class="md-nav__link">
+      <a href="../../../GPU%20Monitoring/" class="md-nav__link">
         GPU Monitoring
       </a>
     </li>
@@ -252,7 +257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/python_venvs/" class="md-nav__link">
+      <a href="../../../python_venvs/" class="md-nav__link">
         Python Virtual Environments
       </a>
     </li>
@@ -267,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/mpi/" class="md-nav__link">
+      <a href="../../../mpi/" class="md-nav__link">
         MPI
       </a>
     </li>
@@ -282,7 +287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Singularity%20Containers/" class="md-nav__link">
+      <a href="../../../Singularity%20Containers/" class="md-nav__link">
         Singularity Containers
       </a>
     </li>
@@ -297,7 +302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/building_python_packages/" class="md-nav__link">
+      <a href="../../../building_python_packages/" class="md-nav__link">
         Building Python Packages in a Container
       </a>
     </li>
@@ -312,7 +317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/jupyter/" class="md-nav__link">
+      <a href="../../../jupyter/" class="md-nav__link">
         Jupyter
       </a>
     </li>
@@ -325,12 +330,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" checked>
       
       <label class="md-nav__link" for="__nav_10">
         DL Frameworks
@@ -346,12 +353,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1" type="checkbox" id="__nav_10_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1" type="checkbox" id="__nav_10_1" checked>
       
       <label class="md-nav__link" for="__nav_10_1">
         TensorFlow
@@ -369,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/tensorflow/nvidia_container_notes/" class="md-nav__link">
+      <a href="../nvidia_container_notes/" class="md-nav__link">
         Running with Singularity
       </a>
     </li>
@@ -379,11 +388,78 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/ml_frameworks/tensorflow/running_with_conda/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Running with Conda
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Running with Conda
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tensorflow-master-build" class="md-nav__link">
+    Tensorflow (master build)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-packages" class="md-nav__link">
+    Installing Packages
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing Packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-pip-install-user" class="md-nav__link">
+    Using pip install --user
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-conda-environments" class="md-nav__link">
+    Using Conda Environments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -393,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/tensorflow/tensorboard_instructions/" class="md-nav__link">
+      <a href="../tensorboard_instructions/" class="md-nav__link">
         Tensorboard
       </a>
     </li>
@@ -432,7 +508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/pytorch/running_with_conda/" class="md-nav__link">
+      <a href="../../pytorch/running_with_conda/" class="md-nav__link">
         Running with Conda
       </a>
     </li>
@@ -450,7 +526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/data_parallel_training/" class="md-nav__link">
+      <a href="../../../data_parallel_training/" class="md-nav__link">
         Data Parallel Training
       </a>
     </li>
@@ -492,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Building_Compiling/" class="md-nav__link">
+      <a href="../../../Building_Compiling/" class="md-nav__link">
         Python/C++ code interoperability
       </a>
     </li>
@@ -504,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Building_Compiling/compiling_and_linking/" class="md-nav__link">
+      <a href="../../../Building_Compiling/compiling_and_linking/" class="md-nav__link">
         Compiling and Linking
       </a>
     </li>
@@ -525,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/balsam/" class="md-nav__link">
+      <a href="../../../balsam/" class="md-nav__link">
         Balsam
       </a>
     </li>
@@ -540,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deephyper/" class="md-nav__link">
+      <a href="../../../deephyper/" class="md-nav__link">
         DeepHyper
       </a>
     </li>
@@ -554,11 +630,114 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tensorflow-master-build" class="md-nav__link">
+    Tensorflow (master build)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-packages" class="md-nav__link">
+    Installing Packages
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing Packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-pip-install-user" class="md-nav__link">
+    Using pip install --user
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-conda-environments" class="md-nav__link">
+    Using Conda Environments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+                  <a href="https://github.com/argonne-lcf/ThetaGPU-Docs/edit/master/docs/ml_frameworks/tensorflow/running_with_conda.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="running-tensorflow-with-conda">Running Tensorflow with Conda</h1>
+<p>Beware that these builds use CUDA and will not work on login nodes, which does not have CUDA installed as there are no GPUs.</p>
+<p>One can test these software in an interactive session:
+<div class="highlight"><pre><span></span><code>qsub -I -n <span class="m">1</span> -t <span class="m">30</span> -A &lt;project-name&gt;
+</code></pre></div></p>
+<h2 id="tensorflow-master-build">Tensorflow (master build)</h2>
+<p>Given A100 and CUDA 11 are very new, we have a build of the master branch of Tensorflow which includes better performance and support for these architectures.</p>
+<p>Users can find the latest builds via the <code>module avail tensorflow</code> command, which will list available builds such as <code>conda/tensorflow/2021-03-02</code> which is a version of the master branch git repo as of the date <code>2021-03-02</code>. This version can be used by
+<div class="highlight"><pre><span></span><code>module load conda/tensorflow/2021-03-02  <span class="c1"># loads conda into your environment, sets up appropriate CUDA libraries</span>
+conda activate <span class="c1"># activates conda with python </span>
+</code></pre></div></p>
+<p>This will setup a conda environment with a recent "from scratch" build of the Tensorflow repository on the master branch. </p>
+<p>This package will also include the latest Horovod tagged release.</p>
+<h2 id="installing-packages">Installing Packages</h2>
+<h3 id="using-pip-install-user">Using <code>pip install --user</code></h3>
+<p>With the conda environment setup, one can install common Python modules using <code>pip install --users &lt;module-name&gt;</code> which will install packages in <code>$HOME/.local/lib/pythonX.Y/site-packages</code>.</p>
+<h3 id="using-conda-environments">Using Conda Environments</h3>
+<p>If you need more flexibility, you can clone the conda environment into a custom path, which would then allow for root-like installations via <code>conda install &lt;module&gt;</code> or <code>pip install &lt;module&gt;</code>.</p>
+<ol>
+<li>Setup the conda environment you want to use as instructed above.</li>
+<li>Create/edit your <code>$HOME/.condarc</code> file to include this these lines, replacing <code>&lt;project-name&gt;</code> with your project name. By default, Conda will your <code>$HOME/.conda/*</code> area for caching files. Since home directories are limited to 100GB, this fills up quickly. This addition tells Conda to use your project space for cache storage instead.
+<div class="highlight"><pre><span></span><code>pkgs_dirs:
+  - /lus/theta-fs0/projects/&lt;project-name&gt;/conda/<span class="si">${</span><span class="nv">ENV_NAME</span><span class="si">}</span>/pkgs
+envs_dirs:
+  - /lus/theta-fs0/projects/&lt;project-name&gt;/conda/<span class="si">${</span><span class="nv">ENV_NAME</span><span class="si">}</span>/envs
+</code></pre></div></li>
+<li>Clone the environment into a local path to which you have write access
+<div class="highlight"><pre><span></span><code>conda create --clone <span class="nv">$CONDA_PREFIX</span> -p &lt;path/to/env&gt;
+</code></pre></div></li>
+<li>Activate that environment:
+<div class="highlight"><pre><span></span><code>conda activate &lt;path/to/env&gt;
+</code></pre></div></li>
+</ol>
+<p>One should then be able to install modules natively.</p>
+                
+              
+              
+                
+
 
               
             </article>
@@ -569,6 +748,39 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../nvidia_container_notes/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Running with Singularity
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../tensorboard_instructions/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Tensorboard
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -602,10 +814,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "/", "features": ["tabs", "instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "/assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["tabs", "instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.4ea5477f.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
     
   </body>

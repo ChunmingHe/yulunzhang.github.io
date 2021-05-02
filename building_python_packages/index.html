@@ -9,19 +9,19 @@
       
       
       
-      <link rel="icon" href="/images/alcf_favicon.ico">
+      <link rel="icon" href="../images/alcf_favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
     
     
       
-        <title>Theta GPU Documentation</title>
+        <title>Building Python Packages in a Container - Theta GPU Documentation</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.e35208c4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.e35208c4.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
         
           
           
@@ -55,12 +55,17 @@
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="amber">
   
     
-    <script>function __prefix(e){return new URL("/",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#building-on-top-of-a-container" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -69,9 +74,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Theta GPU Documentation" class="md-header__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
+    <a href=".." title="Theta GPU Documentation" class="md-header__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
       
-  <img src="/images/Argonne_wireframe_white_transparent.png" alt="logo">
+  <img src="../images/Argonne_wireframe_white_transparent.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -87,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Building Python Packages in a Container
             
           </span>
         </div>
@@ -161,9 +166,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Theta GPU Documentation" class="md-nav__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
+    <a href=".." title="Theta GPU Documentation" class="md-nav__button md-logo" aria-label="Theta GPU Documentation" data-md-component="logo">
       
-  <img src="/images/Argonne_wireframe_white_transparent.png" alt="logo">
+  <img src="../images/Argonne_wireframe_white_transparent.png" alt="logo">
 
     </a>
     Theta GPU Documentation
@@ -192,7 +197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         Home
       </a>
     </li>
@@ -207,7 +212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/system_overview_and_node_information/" class="md-nav__link">
+      <a href="../system_overview_and_node_information/" class="md-nav__link">
         System Overview and Node Information
       </a>
     </li>
@@ -222,7 +227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gpu_node_queue_and_policy/" class="md-nav__link">
+      <a href="../gpu_node_queue_and_policy/" class="md-nav__link">
         GPU Node Queues and Policy
       </a>
     </li>
@@ -237,7 +242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/GPU%20Monitoring/" class="md-nav__link">
+      <a href="../GPU%20Monitoring/" class="md-nav__link">
         GPU Monitoring
       </a>
     </li>
@@ -252,7 +257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/python_venvs/" class="md-nav__link">
+      <a href="../python_venvs/" class="md-nav__link">
         Python Virtual Environments
       </a>
     </li>
@@ -267,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/mpi/" class="md-nav__link">
+      <a href="../mpi/" class="md-nav__link">
         MPI
       </a>
     </li>
@@ -282,7 +287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Singularity%20Containers/" class="md-nav__link">
+      <a href="../Singularity%20Containers/" class="md-nav__link">
         Singularity Containers
       </a>
     </li>
@@ -295,11 +300,78 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/building_python_packages/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Building Python Packages in a Container
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Building Python Packages in a Container
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reaching-the-outside-world-for-pip-packages" class="md-nav__link">
+    Reaching the outside world for pip packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-custom-packages" class="md-nav__link">
+    Building custom packages
+  </a>
+  
+    <nav class="md-nav" aria-label="Building custom packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hdf5" class="md-nav__link">
+    HDF5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horovod" class="md-nav__link">
+    Horovod
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -312,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/jupyter/" class="md-nav__link">
+      <a href="../jupyter/" class="md-nav__link">
         Jupyter
       </a>
     </li>
@@ -369,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/tensorflow/nvidia_container_notes/" class="md-nav__link">
+      <a href="../ml_frameworks/tensorflow/nvidia_container_notes/" class="md-nav__link">
         Running with Singularity
       </a>
     </li>
@@ -381,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/tensorflow/running_with_conda/" class="md-nav__link">
+      <a href="../ml_frameworks/tensorflow/running_with_conda/" class="md-nav__link">
         Running with Conda
       </a>
     </li>
@@ -393,7 +465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/tensorflow/tensorboard_instructions/" class="md-nav__link">
+      <a href="../ml_frameworks/tensorflow/tensorboard_instructions/" class="md-nav__link">
         Tensorboard
       </a>
     </li>
@@ -432,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ml_frameworks/pytorch/running_with_conda/" class="md-nav__link">
+      <a href="../ml_frameworks/pytorch/running_with_conda/" class="md-nav__link">
         Running with Conda
       </a>
     </li>
@@ -450,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/data_parallel_training/" class="md-nav__link">
+      <a href="../data_parallel_training/" class="md-nav__link">
         Data Parallel Training
       </a>
     </li>
@@ -492,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Building_Compiling/" class="md-nav__link">
+      <a href="../Building_Compiling/" class="md-nav__link">
         Python/C++ code interoperability
       </a>
     </li>
@@ -504,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Building_Compiling/compiling_and_linking/" class="md-nav__link">
+      <a href="../Building_Compiling/compiling_and_linking/" class="md-nav__link">
         Compiling and Linking
       </a>
     </li>
@@ -525,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/balsam/" class="md-nav__link">
+      <a href="../balsam/" class="md-nav__link">
         Balsam
       </a>
     </li>
@@ -540,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deephyper/" class="md-nav__link">
+      <a href="../deephyper/" class="md-nav__link">
         DeepHyper
       </a>
     </li>
@@ -554,11 +626,122 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reaching-the-outside-world-for-pip-packages" class="md-nav__link">
+    Reaching the outside world for pip packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-custom-packages" class="md-nav__link">
+    Building custom packages
+  </a>
+  
+    <nav class="md-nav" aria-label="Building custom packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hdf5" class="md-nav__link">
+    HDF5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horovod" class="md-nav__link">
+    Horovod
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+                  <a href="https://github.com/argonne-lcf/ThetaGPU-Docs/edit/master/docs/building_python_packages.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <p>To build python packages for Theta GPU, there are two options: build on top of a bare-metal build (currently not available, but coming soon) or build on top of (and within) a singularity container.  Additionally, you can build a new container from nvidia's docker images.</p>
+<h1 id="building-on-top-of-a-container">Building on top of a container</h1>
+<p>At the moment, you will need two shells to do this: have one open on a login node (for example, <code>thetaloginN</code>, and one open on a compute node (<code>thetagpuN</code>).  First, start the container in interactive mode:</p>
+<div class="highlight"><pre><span></span><code>singularity <span class="nb">exec</span> -B /lus:/lus --nv /lus/theta-fs0/projects/datascience/thetaGPU/containers/pytorch_20.08-py3.sif bash
+</code></pre></div>
+<p>From here, you can create a virtual env for installation:
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">VENV_LOCATION</span><span class="o">=</span>/path/to/virtualenv <span class="c1"># replace this with your path!</span>
+python -m venv --system-site-packages <span class="nv">$VENV_LOCATION</span>
+</code></pre></div></p>
+<p>Note: sometimes, the <code>venv</code> package is available and if not, you can try <code>python -m virtualenv</code>.  If neither are available, you can install it in your user directory:
+<div class="highlight"><pre><span></span><code>pip install --user virtualenv
+</code></pre></div>
+and it should work.</p>
+<p>Next time you log in, you'll have to start the container, and then run <code>source $VENV_LOCATION/bin/activate</code> to re-enable your installed packages.</p>
+<h2 id="reaching-the-outside-world-for-pip-packages">Reaching the outside world for <code>pip</code> packages</h2>
+<p>You'll notice right away when you try to <code>pip</code> install you can not, because the connection fails.  You can, however, go through a proxy server for pip by enabling these variables:
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>http://theta-proxy.tmi.alcf.anl.gov:3128 
+<span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>https://theta-proxy.tmi.alcf.anl.gov:3128
+</code></pre></div></p>
+<p>Now, you can pip install your favorite packages:
+<code>pip install mpi4py</code></p>
+<h2 id="building-custom-packages">Building custom packages</h2>
+<p>Most packages (hdf5, for example, or python packages) can be built and installed into your virtual env.  Here are two common examples that aren't currently part of the pytorch container that may be useful.</p>
+<h3 id="hdf5">HDF5</h3>
+<p>You can find the source code for hdf5 on their website https://www.hdfgroup.org/downloads/hdf5/source-code/.  When downloaded and un-tarred, <code>cd</code> to the directory and run
+<div class="highlight"><pre><span></span><code>./configure --prefix<span class="o">=</span><span class="nv">$VENV_LOCATION</span> <span class="c1"># Add any other configuration arguments</span>
+make -j <span class="m">64</span>
+make install
+</code></pre></div>
+This should get you hdf5!  For example, after this:
+<div class="highlight"><pre><span></span><code>(pytorch_20.08) Singularity&gt; which h5cc
+/home/cadams/ThetaGPU/venvs/pytorch_20.08/bin/h5cc # This is my virtualenv, success!
+</code></pre></div></p>
+<h3 id="horovod">Horovod</h3>
+<p>Horovod is useful for distributed training.  To use it, you need it enabled within the container.</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/horovod/horovod.git
+<span class="nb">cd</span> horovod
+git submodule update --init
+python setup.py build
+python setup.py install
+</code></pre></div>
+<p>This should install horovod within your container.</p>
+                
+              
+              
+                
+
 
               
             </article>
@@ -569,6 +752,39 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../Singularity%20Containers/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Singularity Containers
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../jupyter/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Jupyter
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -602,10 +818,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "/", "features": ["tabs", "instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "/assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["tabs", "instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.4ea5477f.min.js"></script>
+      <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
     
   </body>
